@@ -1,0 +1,453 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #131315;
+}
+
+/* NavBar */
+
+.nav-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    font-family: Lexend, monospace;
+}
+
+.nav-container::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 78, 107, 0.16);
+}
+
+.nav-logo {
+    color: #FF4E6B;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.nav-links {
+    color: #FFFAFB;
+    font-size: 20px;
+}
+
+.nav-link {
+    margin-left: 50px;
+    position: relative;
+
+}
+
+.checked::after {
+    content: '';
+    bottom: -27px;
+    width: 100%;
+    height: 3px;
+    background-color: #FF4E6B;
+    position: absolute;
+    left: 0;
+}
+
+/* Filter */
+
+.filter-container {
+    margin-top: 60px;
+    margin-left: 17%;
+    font-family: Lexend, monospace
+}
+
+.filter-title {
+    color: #FFFAFB;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.filter-buttons {
+    margin-top: 5px;
+}
+
+.filter-button {
+    margin-right: 20px;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 16px;
+}
+
+.red {
+    background-color: rgba(255, 78, 107, 0.16);
+    color: #FF4E6B;
+}
+
+.green {
+    background-color: rgba(0, 204, 102, 0.16);
+    color: #00CC66;
+}
+
+.yellow {
+    background-color: rgba(255, 187, 51, 0.16);
+    color: #FFBB33;
+}
+
+.blue {
+    background-color: rgba(77, 180, 255, 0.16);
+    color: #4DB4FF;
+}
+
+.redActive {
+    background-color: rgba(255, 78, 107);
+    color: black;
+}
+
+.greenActive {
+    background-color: rgba(0, 204, 102);
+    color: black;
+}
+
+.yellowActive {
+    background-color: rgba(255, 187, 51);
+    color: black;
+}
+
+.blueActive {
+    background-color: rgba(77, 180, 255);
+    color: black;
+}
+
+
+/* Mount list */
+
+.mount-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Lexend, monospace
+}
+
+
+/* Footer */
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0 50px 0;
+    font-family: Lexend, monospace;
+    position: relative;
+}
+
+.mount-container:after {
+    content: '';
+    position: absolute;
+    bottom: -130px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 78, 107, 0.16);
+}
+
+.footer-logo {
+    color: #FF4E6B;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-link {
+    color: #FFFAFB;
+    font-size: 16px;
+    padding: 20px;
+}
+
+.footer-desc {
+    color: #797979;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+}
+
+/* PopUp */
+
+.popup-container {
+    z-index: 1;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 400px;
+    height: 100%;
+    font-family: Lexend, monospace
+
+}
+
+/* Event Card */
+
+.popup-header {
+    margin-top: 20px;
+    width: 300px;
+    font-size: 32px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.popup-header::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 78, 107, 0.16);
+}
+
+.popup-closeButton {
+    color: #FF4E6B;
+}
+
+.popup-addButton {
+    margin-top: 20px;
+    width: 300px;
+    background-color: #FF4E6B;
+    color: #131315;
+    border: 1px solid black;
+    font-size: 20px;
+}
+
+.eventCard-container {
+    background-color: #07070e;;
+    width: 300px;
+    margin-top: 50px;
+    font-family: Lexend, monospace;
+    position: relative;
+
+}
+
+.eventCard-content::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 78, 107, 0.16);
+}
+
+.eventCard-content {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.eventCard-desc {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: justify;
+    height: fit-content;
+    width: 100%;
+    overflow-wrap: break-word;
+}
+
+.eventCard-location {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #797979;
+}
+
+.eventCard-outline {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.eventCard-type {
+    font-size: 12px;
+    padding: 5px 20px;
+    border-radius: 16px;
+}
+
+/* Create\Update Form */
+
+.form-container {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgba(255, 250, 251, 0.2);
+}
+
+.form-content {
+    width: 550px;
+    height: 520px;
+    background-color: #131315;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 24px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form-closeButton {
+    color: #FF4E6B;
+}
+
+.form-header::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 78, 107, 0.16);
+}
+
+.form-erorr {
+    color: #FF4E6B;
+    font-size: 12px;
+}
+
+.form-input {
+    background-color: rgba(255, 250, 251, 0.04);
+    border: 1px solid black;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.form-textarea {
+    background-color: rgba(255, 250, 251, 0.04);
+    border: 1px solid black;
+    margin-top: 20px;
+    resize: none;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.form-location {
+    margin-top: 20px;
+}
+
+.form-date {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.form-day {
+    padding: 5px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.form-timeselect {
+    background-color: rgba(255, 250, 251, 0.04);
+    border: 1px solid black;
+    width: 100%;
+    height: 40px;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.form-typeselect {
+    background-color: rgba(255, 250, 251, 0.04);
+    border: 1px solid black;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.form-typeselect option {
+    color: white;
+    background-color: rgba(255, 250, 251, 0.04);
+}
+
+.form-buttons {
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+}
+
+.form-cancel {
+    margin-right: 20px;
+    color: #FF4E6B;
+}
+
+.form-delete {
+    margin-right: 20px;
+    color: #FF4E6B;
+    background-color: rgba(255, 78, 107, 0.16);
+    height: 40px;
+    width: 72px;
+    border-radius: 4px;
+}
+
+.form-add {
+    background-color: #FF4E6B;
+    color: black;
+    height: 40px;
+    width: 72px;
+    border-radius: 4px;
+}
+
+.event-color-1 {
+    color: red;
+}
+
+.event-color-2 {
+    color: green;
+}
+
+.event-color-3 {
+    color: yellow;
+}
+
+.event-color-4 {
+    color: blue;
+}
